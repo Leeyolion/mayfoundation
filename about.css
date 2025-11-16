@@ -97,6 +97,10 @@ header {
     header{
         padding: 20px 4%;
     }
+
+    header a {
+        font-size: 5px;
+    }
 }
 
 @media(max-width:1050px){
@@ -936,4 +940,5 @@ main.row {
         margin: 20px 0;
     }
 }
+
 

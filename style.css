@@ -175,7 +175,7 @@ header {
 .hero-box {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../pics/AfricanChild&Mum.jpg);
+    background-image: url(pics/AfricanChild&Mum.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,7 +281,7 @@ header {
     .hero-box {
         width: 100%;
         min-height: 1000px;
-        background:url(../pics/AfricanChild&Mum.jpg);
+        background:url(pics/AfricanChild&Mum.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size:cover;
@@ -1163,7 +1163,7 @@ justify-items: center;
 
 @media screen and (max-width: 600px){
     .hero-box {
-        background:url(../pics/Herosectionmobile.png);
+        background:url(pics/Herosectionmobile.png);
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -1268,4 +1268,5 @@ justify-items: center;
         scale: 1;
         translate: 0 0;
     }
+
 }

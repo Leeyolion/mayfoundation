@@ -172,6 +172,29 @@ header {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-box {
     width: 100%;
     min-height: 100vh;
@@ -184,7 +207,7 @@ header {
 
 .hero-container {
     width: 50%;
-    margin-top: 100px;
+    
 }
 
 .hero-container a img{
@@ -202,13 +225,12 @@ header {
 .hero-box .heroheading2 {
     color: rgb(33, 133, 216);
     font-size: 45px;
-    line-height: 65px;
+    margin-top: 10px;
 }
 
 .hero-box .herodesc {
     color: rgb(0, 0, 0);
     font-size: 18px;
-    line-height: 27px;
     padding: 10px 0;
 }
 
@@ -290,7 +312,6 @@ header {
 
     .hero-container {
         width: 80%;
-        margin-top: 200px;
     }
 } 
 
@@ -302,8 +323,20 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .about {
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100%;
     background: rgb(255, 255, 255);
     display: flex;
@@ -415,6 +448,7 @@ header {
     width: 100%;
     background-color: #000000;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -527,17 +561,15 @@ header {
     }
 
     .servicecards {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     #service-section #programs-paragraph {
         width: 80%;
     }
 
-    #service-section {
-        margin-top: 1600px;
-    }
-
+    
+             
     .profile {
         padding-top: 1600px;
         display: flex;
@@ -561,6 +593,17 @@ header {
         padding-top: 1700px;
         display: flex;
         flex-direction: column;
+    }
+
+    .servicecards {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
+@media(max-width:600px) {
+    .servicecards {
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
@@ -1062,7 +1105,7 @@ justify-items: center;
     width: 80%;
     max-width: 1170px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 4fr);
     grid-gap: 50px;
     overflow: hidden;
     padding: 5rem 0;
@@ -1271,3 +1314,112 @@ justify-items: center;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.teamsection {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.teamheading {
+    padding-top: 40px;
+}
+
+.profile-card {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: #ffffff;
+    padding: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding-inline-end: 30px;
+    transition: 0.6s;
+    margin: 25px 25px;
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    height: 260px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    z-index: 99;
+    
+}
+
+.profile-card:hover .img {
+    transform: translateY(-60px);
+}
+
+.profile-card .img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.6s;
+    
+}
+
+.profile-card:hover img{
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+}
+
+.caption h1 {
+    font-size: 1rem;
+}
+
+.caption p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.caption .social-links a {
+    color: rgb(36, 36, 36);
+    margin-right: 8px;
+    font-size: 20px;
+    transition: 0.6s ease-in;
+}
+
+.caption .social-links a:hover i {
+    color: #00aeff;
+}
